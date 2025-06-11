@@ -2,7 +2,7 @@
 #30 Days Of Python: Day 3
 
 #1-3
-""" 
+
 age = 19
 heigth = 1.72
 complex_number = complex
@@ -93,7 +93,7 @@ y2 = x2_ej11**2 + 6*x2_ej11 + 9
 y3 = x3_ej11**2 + 6*x3_ej11 + 9
 
 print("El valor con 1, 3 y -3 respectivamente son: ", y1, y2, y3)
-"""
+
 #punto 12
 
 palabra1 = 'python'
@@ -102,12 +102,89 @@ palabra2 = 'dragon'
 len1 = len(palabra1)
 len2 = len(palabra2)
 
-print("Length of 'python':", len1)
-print("Length of 'dragon':", len2)
+print("longitud de 'python':", len1)
+print("longitud de 'dragon':", len2)
 
 if (len1>len2): 
     print("True")
 elif(len1==len2):
-    print("They are the same length ")
+    print("son de la misma longitud")
 else:
     print("False")
+
+print("")
+#punto 13. Negación de 'on' en ambas
+print(not ('on' in 'dragon' and 'on' in 'python'))  # False
+
+
+print("")
+#punto 14. Longitud de 'python' a float y a string
+largo_python = len("python")
+print(float(largo_python))  # 6.0
+print(str(largo_python))    # "6"
+
+
+print("")
+
+#punto 15. Verificar si un número es par
+numero = int(input("Ingresa un número para verificar si es par: "))
+print(numero % 2 == 0)
+
+
+print("")
+#punto 16. División entera y comparación
+print(7 // 3 == int(2.7))  # True
+
+print("")
+
+#punto 17. 1o equal to type 10
+print(type('10') == type(10))
+
+print("")
+
+print("")
+#punto 18. int('9.8') genera error, así que usamos float primero
+print(int(float('9.8')) == 10)  # False
+
+
+print("")
+#punto 19. Calcular pago semanal
+print("\n--- Punto 19 ---")
+horas = float(input("Ingresa las horas trabajadas: "))
+tasa = float(input("Ingresa la tarifa por hora: "))
+salario = horas * tasa
+print("Tu ganancia semanal es:", salario)
+
+
+print("")
+#punto 20. Segundos vividos
+print("\n--- Punto 20 ---")
+anios = int(input("¿Cuántos años has vivido?: "))
+segundos = anios * 365 * 24 * 60 * 60
+print("Has vivido aproximadamente", segundos, "segundos")
+
+
+print("")
+#punto 21. Tabla de potencias
+print("\n--- Punto 21: Tabla de potencias ---")
+print("N  N^0 N^1 N^2 N^3")
+for i in range(1, 6):
+    print("{:<2} {:<3} {:<3} {:<3} {:<3}".format(i, 1, i, i*2, i*3))
+
+#punto 22. ingresar años vividos, calcular segundos vividos
+años = int(input("¿Cuántos años has vivido?: "))
+segundos = años * 365 * 24 * 60 * 60
+print(f"Has vivido por {segundos} segundos.")
+
+
+#punto 23. Escriba un script en Python que muestre la siguiente tabla
+Ejemplo_tabla="""
+1 1 1 1 1
+2 1 2 4 8
+3 1 3 9 27
+4 1 4 16 64
+5 1 5 25 125
+"""
+print(f"Escriba un script en Python que muestre la siguiente tabla : \n\n {Ejemplo_tabla} \n")
+for i in range(1, 6):
+    print(f"{i} {1} {i} {i*2} {i*3}")
