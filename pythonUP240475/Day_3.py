@@ -188,11 +188,3 @@ Ejemplo_tabla="""
 print(f"Escriba un script en Python que muestre la siguiente tabla : \n\n {Ejemplo_tabla} \n")
 for i in range(1, 6):
     print(f"{i} {1} {i} {i*2} {i*3}")
-
-    #nuevo commit
-
-    asd
-
-    asd
-    asd
-    asserts
